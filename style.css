@@ -1,0 +1,125 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+:root {
+    --hue-neutral:2001
+    --hue-wrong:0;
+    --hue-correct: 145;
+}
+
+body {
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.scores {
+    font-size: large;
+    font-weight: 300;
+    color: black;
+}
+
+#timer{
+    font-size: large;
+}
+
+/*questions*/
+#question {
+    font-size: large;
+    font-weight: bolder;
+
+}
+
+#countdown{
+    font-size: large;
+}
+
+.start-screen {
+    text-align: center;
+}
+
+/*start quiz button*/
+#start-btn {
+    padding: 5px ;
+    background-color: rebeccapurple;
+    border-color: rgb(49, 6, 73);
+    font-size: large;
+    outline: none;
+}
+
+#start-btn:hover {
+     border-color: black;
+     border-width: 3px;
+}
+
+/*quiz container, start-screen, questions, end-screen*/
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+
+body.correct {
+    background-color: green;
+}
+
+body.wrong{
+    background-color: red;
+}
+
+/*display for answer buttons*/
+.btn-grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, auto);
+}
+
+#feedback{
+    font-style: italic;
+    font-size: medium;
+    color: grey;
+}
+
+/*next button in quiz*/
+#next-btn{
+    padding: 5px ;
+    background-color: rebeccapurple;
+    border-color: rgb(49, 6, 73);
+    float: right;
+    font-size: large;
+    outline: none;
+}
+
+#next-bnt:hover{
+    border-color: white;
+}
+
+/*answer buttons*/
+button {
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: rebeccapurple;
+    color: white;
+    outline: none;
+}
+
+button:hover {
+     border-width: 3px; 
+     border-color: black;
+}
+
+.hide {
+    display: none;
+}
+
